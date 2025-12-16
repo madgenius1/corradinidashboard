@@ -1,0 +1,38 @@
+export const ROUTES = {
+  AUTH: {
+    LOGIN: "/login",
+    CREATE_ACCOUNT: "/create-account",
+    SELECT_ROLE: "/select-role",
+  },
+  DASHBOARD: {
+    ROOT: "/dashboard",
+    ADMIN: {
+      OVERVIEW: "/dashboard/admin/overview",
+      STUDENTS: "/dashboard/admin/students",
+      STUDENT_ADD: "/dashboard/admin/students/add",
+      STUDENT_DETAIL: (id: string) => `/dashboard/admin/students/${id}`,
+      TEACHERS: "/dashboard/admin/teachers",
+      TEACHER_ADD: "/dashboard/admin/teachers/add",
+      TEACHER_DETAIL: (id: string) => `/dashboard/admin/teachers/${id}`,
+      CLASSES: "/dashboard/admin/classes",
+      CLASS_ADD: "/dashboard/admin/classes/add",
+      CLASS_DETAIL: (id: string) => `/dashboard/admin/classes/${id}`,
+      FEES: "/dashboard/admin/fees",
+      PAYMENTS: "/dashboard/admin/payments",
+      PAYMENT_ADD: "/dashboard/admin/payments/add",
+      EXPORTS: "/dashboard/admin/exports",
+      EXPORT_REQUEST: "/dashboard/admin/exports/request",
+      EXPORT_DETAIL: (id: string) => `/dashboard/admin/exports/${id}`,
+      AUDIT_LOGS: "/dashboard/admin/audit-logs",
+    },
+    TEACHER: {
+      OVERVIEW: "/dashboard/teacher/overview",
+      CLASSES: "/dashboard/teacher/classes",
+      CLASS_DETAIL: (id: string) => `/dashboard/teacher/classes/${id}`,
+      ATTENDANCE: (classId: string) => `/dashboard/teacher/attendance/${classId}`,
+      GRADES: (classId: string) => `/dashboard/teacher/grades/${classId}`,
+      STUDENTS: "/dashboard/teacher/students",
+      STUDENT_DETAIL: (id: string) => `/dashboard/teacher/students/${id}`,
+    },
+  },
+};

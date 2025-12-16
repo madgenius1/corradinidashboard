@@ -1,6 +1,6 @@
 export enum ClassType {
-  PRIMARY = "PRIMARY",
-  SECONDARY = "SECONDARY",
+  PRIMARY = "LOWER",
+  SECONDARY = "UPPER",
 }
 
 export interface Class {
