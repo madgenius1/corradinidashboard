@@ -15,11 +15,11 @@ export const Card: React.FC<CardProps> = ({
     none: "",
     sm: "p-3",
     md: "p-4",
-    lg: "p-6",
+    lg: "p-8",
   };
   
   return (
-    <div className={`bg-light border border-gray-200 rounded-lg ${paddingStyles[padding]} ${className}`}>
+    <div className={`bg-dark border border-gray-400 shadow-lg rounded-lg ${paddingStyles[padding]} ${className}`}>
       {children}
     </div>
   );

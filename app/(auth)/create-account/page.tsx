@@ -43,7 +43,7 @@ export default function CreateAccountPage() {
     <Card>
       <div className="text-center mb-6">
         <h1 className="text-2xl font-bold text-dark mb-2">Create Account</h1>
-        <p className="text-gray-600">Register for the school management system</p>
+        <p className="text-gray-700 font-semibold">Register for the school management system</p>
       </div>
       
       {message && (
@@ -62,7 +62,7 @@ export default function CreateAccountPage() {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          placeholder="John Doe"
+          placeholder="Your Name"
           required
         />
         
@@ -72,7 +72,7 @@ export default function CreateAccountPage() {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="your.email@school.com"
+          placeholder="Enter your email"
           required
         />
         
@@ -96,7 +96,7 @@ export default function CreateAccountPage() {
           required
         />
         
-        <Button type="submit" className="w-full">
+         <Button type="submit" className="w-full bg-gray-900 hover:bg-gray-800 text-white cursor-pointer ">
           Create Account
         </Button>
       </form>
@@ -104,17 +104,17 @@ export default function CreateAccountPage() {
       <div className="mt-6 text-center">
         <p className="text-sm text-gray-600">
           Already have an account?{" "}
-          <Link href="/login" className="text-primary hover:underline">
+          <Link href="/login" className="text-[#000EEE] ml-2 hover:underline">
             Sign in
           </Link>
         </p>
       </div>
       
-      <div className="mt-4 text-center">
+      {/* <div className="mt-4 text-center">
         <p className="text-xs text-gray-500">
           Demo Mode: Account creation is simulated. No data is actually saved.
         </p>
-      </div>
+      </div> */}
     </Card>
   );
 }

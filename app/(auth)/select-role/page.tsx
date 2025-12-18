@@ -9,19 +9,19 @@ import { generateId } from "@/lib/utils/generators";
 
 const TEST_ACCOUNTS = {
   [Role.PRINCIPAL]: {
-    email: "principal@school.com",
+    email: "principal@corradini.com",
     password: "principal123",
   },
   [Role.BURSAR]: {
-    email: "bursar@school.com",
+    email: "bursar@corradini.com",
     password: "bursar123",
   },
   [Role.HEAD_OF_STUDIES]: {
-    email: "hos@school.com",
+    email: "hos@corradini.com",
     password: "hos123",
   },
   [Role.TEACHER]: {
-    email: "teacher@school.com",
+    email: "teacher@corradini.com",
     password: "teacher123",
   },
 };
@@ -55,17 +55,17 @@ export default function SelectRolePage() {
   ];
   
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 lg:py-12 md:py-8 py-6 cursor-pointer">
       <div className="text-center">
         <h1 className="text-2xl font-bold text-dark mb-2">Select Your Role</h1>
         <p className="text-gray-600">Choose a role to explore the system</p>
       </div>
       
-      <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+      {/* <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
         <p className="text-sm text-yellow-800 text-center">
           <strong>Demo Mode:</strong> In production, this step will be replaced by real authentication and permissions.
         </p>
-      </div>
+      </div> */}
       
       <div className="grid gap-4">
         {roles.map((role) => {
