@@ -21,7 +21,7 @@ export const TopBar: React.FC = () => {
   if (!user) return null;
   
   return (
-    <header className="h-16 bg-light border-b border-gray-200 flex items-center justify-between px-6 fixed top-0 right-0 left-64 z-10">
+    <header className="h-16 bg-white border-b border-gray-200 flex items-center justify-between px-6 fixed top-0 right-0 left-64 z-20">
       <div className="flex items-center gap-4">
         <h2 className="text-lg font-semibold text-dark">Dashboard</h2>
       </div>

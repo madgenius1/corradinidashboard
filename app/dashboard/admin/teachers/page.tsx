@@ -63,7 +63,7 @@ export default function TeachersPage() {
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <div>
+        <div className="lg:pt-8 py-4">
           <h1 className="text-3xl font-bold text-dark mb-2">Teachers</h1>
           <p className="text-gray-600">Manage teaching staff</p>
         </div>

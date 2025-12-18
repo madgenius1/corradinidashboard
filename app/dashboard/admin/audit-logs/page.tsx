@@ -59,7 +59,7 @@ export default function AuditLogsPage() {
   
   return (
     <div className="space-y-6">
-      <div>
+      <div className="lg:pt-8 py-4">
         <h1 className="text-3xl font-bold text-dark mb-2">Audit Logs</h1>
         <p className="text-gray-600">System activity history</p>
       </div>

@@ -100,8 +100,8 @@ export const Sidebar: React.FC = () => {
   
   return (
     <aside className="w-64 bg-dark text-light h-screen flex flex-col fixed left-0 top-0">
-      <div className="p-6 border-b border-gray-700">
-        <h1 className="text-xl font-bold">School MS</h1>
+      <div className="px-6 h-16 flex justify-left items-center border-b border-gray-700">
+        <h1 className="text-xl font-bold">Corradini MS</h1>
       </div>
       
       <nav className="flex-1 overflow-y-auto py-4">
