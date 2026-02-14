@@ -22,7 +22,7 @@ export default function () {
         <Card>
             <div>
                 <div className="text-center mb-6">
-                    <h1 className="text-2xl font-bold text-dark mb-2">Corradini School Management System</h1>
+                    <h1 className="text-2xl font-bold text-dark mb-2"> School Management System</h1>
                     <p className="text-gray-700 font-semibold">Change your password here</p>
                 </div>
                 <form onSubmit={handleSubmit} className="space-y-4">

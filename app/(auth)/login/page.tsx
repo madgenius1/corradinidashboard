@@ -20,7 +20,7 @@ export default function LoginPage() {
   return (
     <Card>
       <div className="text-center mb-6">
-        <h1 className="text-2xl font-bold text-dark mb-2">Corradini School Management System</h1>
+        <h1 className="text-2xl font-bold text-dark mb-2">School Management System</h1>
         <p className="text-gray-700 font-semibold">Sign in to your account</p>
       </div>
 
