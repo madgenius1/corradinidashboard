@@ -6,11 +6,11 @@ const raleway = Raleway({
   subsets: ["latin"],
 });
 
-const siteName = "Corradini School Management System";
+const siteName = "School Management System";
 
 
 export const metadata: Metadata = {
-  title: "Corradini School Management System",
+  title: "School Management System",
   description: "Managing your school operations efficiently",
 };
 
